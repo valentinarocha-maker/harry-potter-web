@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Harry Potter</title>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv5wSkzrAXxtiZZeeC7u8e3qIVTbmN7p9d0dUvFlnvTyDLTonRKT7HglTVEOrmuY2rG0k&usqp=CAU">
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./components.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <div><h1> Harry Potter </h1></div>
+        
+            <ul>
+                <li><a href="./index.html">Inicio</a></li> 
+                <li><a href="./sobre-la-saga.html">Sobre La Saga</a></li>
+                <li><a href="./reparto.html">Reparto</a></li>
+                <li><a href="./produccion.html">Producción</a></li>
+                <li><a href="./curiosidades.html">Curiosidades y Premios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta sobre la saga de Harry Potter? ¿Quieres compartir tu opinión o 
+                sugerir contenido adicional para nuestro sitio? Nos encantaría escucharte. Utiliza el 
+                formulario a continuación o síguenos en nuestras redes sociales oficiales.</p>
+        </section>
+
+        <section>
+            <h3>Formulario de Contacto</h3>
+           
+            <div class="form-container">
+                <form action="./confirmacion.html" method="get">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required 
+                            minlength="3"
+                            maxlength="50"
+                            placeholder="Ingresa tu nombre completo">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apellido">Apellido *</label>
+                        <input 
+                            type="text" 
+                            id="apellido" 
+                            name="apellido" 
+                            required 
+                            minlength="3"
+                            maxlength="50"
+                            placeholder="Ingresa tu apellido">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="ejemplo@correo.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tema">Tema de Consulta *</label>
+                        <select id="tema" name="tema" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="pregunta-general">Pregunta general sobre la saga</option>
+                            <option value="sugerencia">Sugerencia de contenido</option>
+                            <option value="correccion">Corrección de información</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            required 
+                            minlength="10"
+                            maxlength="500"
+                            placeholder="Escribe tu mensaje aquí (mínimo 10 caracteres, máximo 500)"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h3>Síguenos en Redes Sociales</h3>
+            
+            <p>Mantente conectado con las últimas noticias, curiosidades y contenido exclusivo 
+                sobre el mundo mágico de Harry Potter.</p>
+            
+            <div class="article-grid">
+                <article>
+                    <h4>Facebook Oficial</h4>
+                    <p><strong><a href="https://www.facebook.com/harrypotter/?locale=es_LA">@HarryPotter</a></strong></p>
+                    <p>Noticias oficiales, imágenes exclusivas y actualizaciones del universo mágico.</p>
+                </article>
+                
+                <article>
+                    <h4>Twitter</h4>
+                    <p><strong><a href="https://x.com/harrypotter?ref_src=twsrc%5Etfw">@harrypotter</a></strong></p>
+                    <p>Tweets diarios, curiosidades e interacción directa con la comunidad de fanáticos.</p>
+                </article>
+                
+                <article>
+                    <h4>Instagram</h4>
+                    <p><strong><a href="https://www.instagram.com/wizardingworld.latino/">wizardingworld.latino
+</a></strong></p>
+                    <p>Fotografías detrás de cámaras, arte conceptual y momentos especiales de la saga.</p>
+                </article>
+                
+                <article>
+                    <h4>YouTube</h4>
+                    <p><strong><a href="https://www.youtube.com/@harrypotter">@harrypotter</a></strong></p>
+                    <p>Trailers oficiales, escenas eliminadas y documentales exclusivos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h3>Dónde Ver las Películas</h3>
+           
+            <p>Descubre dónde puedes disfrutar de toda la saga de Harry Potter en plataformas 
+                de streaming y servicios digitales.</p>
+            
+            <div class="article-grid">
+                <article>
+                    <h4><a href="https://www.hbomax.com/ar/es">HBO Max</a></h4>
+                    <p>Saga completa disponible para suscriptores con calidad HD y 4K.</p>
+                </article>
+                
+                <article>
+                    <h4> <a href="https://www.primevideo.com/offers/nonprimehomepage/ref=dvm_pds_brd_ar_hk_s_g_mkw_p409-kw8063-cr57208-c?gad_source=1&gbraid=0AAAAADPrr9evqlmpVD6SDuM53z3u5rVQe&gad_campaignid=700389028&gclid=CjwKCAiA8vXIBhAtEiwAf3B-g2KY2uHeZEunDL_Wyg3xP77EmmXC9_3mUh5FW99MkahhlRl80SbHKhoCG6oQAvD_BwE&mrntrk=go_cmp-700389028_adg-42306243048_ad-645960031813_kwd-45697133742_dev-c_ext-">Amazon Prime Video</a></h4>
+                    <p>Alquiler y compra digital de todas las películas individualmente.</p>
+                </article>
+                
+                <article>
+                    <h4> <a href="https://tv.apple.com/ar">Apple TV</a></h4>
+                    <p>Compra y alquiler digital con opción de descarga offline.</p>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h3>Información Adicional</h3>
+           
+            <h4>Recursos Oficiales</h4>
+            <ul>
+                <li><strong><a href="https://www.harrypotter.com/es">Wizarding World:</a></strong> Sitio web oficial del universo mágico</li>
+                <li><strong><a href="https://www.wbstudiotour.co.uk/es/">Warner Bros. Studio Tour:</a></strong> Tour oficial en Londres</li>
+                <li><strong><a href="https://www.universalorlando.com/web/es/us/tickets-packages/park-tickets/international/espanol.html?__source=PRTNR_A8CQ7KL9IA_517&gclsrc=aw.ds&gad_source=1&gad_campaignid=20966496210&gbraid=0AAAAAD3bu3L5j0mvxrTF8e5Dy83P1vEek&gclid=CjwKCAiA8vXIBhAtEiwAf3B-g_9kE6H3gA3iEnU3sLI-u8uqeuOAl2Tb6_qcsCWO-1pG_J_yGIsq6xoCr5oQAvD_BwE">Universal Studios:</a></strong> Parques temáticos de Harry Potter</li>
+            </ul>
+        </section>
+
+        <aside>
+            <h3>Información de Contacto</h3>
+            <p><strong>Tipo de sitio:</strong> Proyecto académico</p>
+            <hr>  
+            <p><strong>Propósito:</strong> Análisis educativo</p> 
+            <hr>
+            <p><strong>Tiempo de respuesta:</strong> 24-48 horas</p>
+            <hr>
+            <p><strong>Idiomas:</strong> Español</p> 
+            <hr>
+            <p><strong>Última actualización:</strong> Noviembre 2025</p>
+            <hr>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sitio Web de Harry Potter </p>
+    </footer>
+</body>
+</html>

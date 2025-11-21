@@ -1,0 +1,295 @@
+.table-container {
+    overflow-x: auto;
+    margin: var(--spacing-lg) 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-white);
+    font-size: var(--text-md);
+}
+
+table thead {
+    background: linear-gradient(135deg, var(--color-gryffindor-red) 0%, #8b0000 100%);
+    color: var(--color-white);
+}
+
+table thead th {
+    padding: var(--spacing-md);
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--color-gryffindor-gold);
+}
+
+table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--color-parchment);
+}
+
+table tbody tr:hover {
+    background-color: #ffe8c5;
+    transform: scale(1.01);
+}
+
+table tbody td {
+    padding: var(--spacing-md);
+    font-size: var(--text-md);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+table tbody td:first-child {
+    font-weight: 600;
+    color: var(--color-gryffindor-red);
+}
+
+.form-container {
+    background-color: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: 10px;
+    border: 2px solid var(--color-hogwarts-stone);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: var(--spacing-lg) auto;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: var(--text-md);
+    color: var(--color-gryffindor-red);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: var(--spacing-sm);
+    font-family: var(--font-body);
+    font-size: var(--text-md);
+    border: 2px solid var(--color-hogwarts-stone);
+    border-radius: 5px;
+    background-color: var(--color-parchment);
+    color: var(--color-text-primary);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--color-gryffindor-gold);
+    box-shadow: 0 0 0 3px rgba(211, 166, 37, 0.2);
+    background-color: var(--color-white);
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-family: var(--font-body);
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--color-gryffindor-red) 0%, #8b0000 100%);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: var(--text-md);
+    font-weight: 600;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #8b0000 0%, var(--color-gryffindor-red) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.audio-container {
+    background: linear-gradient(135deg, var(--color-magic-purple) 0%, var(--color-hogwarts-stone) 100%);
+    padding: var(--spacing-lg);
+    border-radius: 10px;
+    border: 3px solid var(--color-gryffindor-gold);
+    margin: var(--spacing-lg) 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.audio-container h4 {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--text-xl);
+}
+
+.audio-container p {
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+    font-size: var(--text-sm);
+}
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    margin: var(--spacing-sm) auto;
+    border-radius: 25px;
+    filter: sepia(20%) saturate(70%) hue-rotate(330deg);
+}
+
+.cast-grid,
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+}
+
+article {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-hogwarts-stone);
+    border-radius: 10px;
+    padding: var(--spacing-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(116, 0, 1, 0.2);
+    border-color: var(--color-gryffindor-gold);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-sm);
+}
+
+article h4 {
+    font-family: var(--font-heading);
+    color: var(--color-gryffindor-red);
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-xs);
+    text-align: center;
+}
+
+article p {
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.error-container {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-container h2 {
+    font-size: var(--text-3xl);
+    color: var(--color-gryffindor-red);
+    margin-bottom: var(--spacing-md);
+}
+
+.error-container .error-code {
+    font-size: 6rem;
+    font-family: var(--font-heading);
+    color: var(--color-gryffindor-gold);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: var(--spacing-md);
+}
+
+.error-container p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-lg);
+    max-width: 600px;
+}
+
+.error-container .btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.confirmation-container {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background-color: var(--color-white);
+    border: 3px solid var(--color-gryffindor-gold);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: var(--spacing-xl) auto;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation-container .success-icon {
+    font-size: 4rem;
+    color: #28a745;
+    margin-bottom: var(--spacing-md);
+}
+
+.confirmation-container h2 {
+    color: var(--color-gryffindor-red);
+    margin-bottom: var(--spacing-md);
+}
+
+.confirmation-container p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .cast-grid,
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    table {
+        font-size: var(--text-sm);
+    }
+    
+    table thead th,
+    table tbody td {
+        padding: var(--spacing-sm);
+    }
+    
+    .form-container {
+        padding: var(--spacing-md);
+    }
+    
+    .error-container .error-code {
+        font-size: 4rem;
+    }
+}
